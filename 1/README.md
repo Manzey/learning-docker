@@ -19,5 +19,5 @@ and provides it with basic configuration. Then it sets permissions for a set of 
 And finally it runs "unicorn" which runs the application.
 
 ## CMDs to run
-`vagrant up  
-vagrant up --provider hyperv`
+`vagrant up`  
+`vagrant up --provider hyperv`

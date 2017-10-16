@@ -1,0 +1,33 @@
+version: '3'
+services:
+ # The redmine application
+  redmine:
+    # Build from the Dockerfile in ./app
+    build: ./app
+    # Will wait for the database to load before running app, to avoid errors
+    depends_on:
+      - db
+    # Exposes port 8080  
+    ports:
+      - '8080:8080'
+    # Run command to run the application with unicorn
+    command: unicorn
+
+  # The postgres database  
+  db:
+    # Creates the database from image
+    image: postgres:9.5
+    # Expose postgres standard ports to allow application connection
+    ports:
+      - '5432:5432'
+    # Set username and password  
+    environment:
+        POSTGRES_DB: postgres
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: redmine
+    # Database volume    
+    volumes:
+      - post-db:/var/lib/postgresql/data
+# Available volumes      
+volumes:
+  post-db:

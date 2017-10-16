@@ -1,6 +1,7 @@
 # 1. Vagrant demo version
 
-If encounter error message due to Hyper-V crash with VirtualBox, delete .vagrant and run vagrant up again
+If encounter error message due to Hyper-V crash with VirtualBox, delete .vagrant and run vagrant up again.
+Only works with VirtualBox so far. Hyper-V does not seem to forward ports properly.
 
 ## Files
 The vagrant file builds a CentOS/7 box. The startup process in split into different files:

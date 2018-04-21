@@ -1,4 +1,8 @@
-# Examination
+# About
+This is something I did whilst learning how to work with Vagrant and Docker.  
+I learned about using compose to build docker-machines.  
+Below is my work diary with some frustration about how things went.
+
 ## Work Diary - Total worktime: 17 hours
 ### Day 1 (Part 1 Vagrant) Worktime: 8 hours
 The first working day of the examination went pretty good at the start. It all flowed on well, read the documentation for redmine and learned how to use it.
